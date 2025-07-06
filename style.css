@@ -1,0 +1,102 @@
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+        scroll-behavior: smooth; 
+    }
+    
+    body { 
+        font-family: Arial, sans-serif; 
+        line-height: 1.6; 
+    }
+
+    header { 
+        background: #7ac97e; 
+        color: white; padding: 20px; 
+        position: sticky; 
+        top: 0; 
+        z-index: 1000; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    header img { 
+        height: 40px; 
+    }
+    nav a { 
+        color: white; 
+        margin-left: 20px; 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+
+    nav a:hover { 
+
+        text-decoration: underline; 
+    }
+
+    section { 
+        padding: 60px 20px; 
+        max-width: 900px; 
+        margin: auto; }
+
+    #inicio { 
+        text-align: center; 
+        background-color: #f1f8e9; 
+    }
+
+    #inicio img { 
+        max-width: 100%; 
+        height: auto; 
+        margin-top: 20px; 
+    }
+
+    h1 { 
+        color: #2e7d32; 
+    
+    }
+
+    h2 { 
+
+        color: #388e3c; 
+        margin-bottom: 10px; 
+    }
+
+    ul { 
+        padding-left: 20px; 
+    }
+    footer { 
+        background-color: #e0e0e0; 
+        padding: 20px; 
+        text-align: center; 
+    }
+
+    footer img { 
+        height: 40px; 
+        margin: 0 10px; 
+        vertical-align: middle; 
+    }
+
+    .logo-grupo { 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+    }
+
+    .ods-link { display: block; 
+        margin: 10px 0; 
+    }
+
+    form{
+        background: #7ac97e; 
+        color: white;
+        border-radius:3%;
+        padding: 5%;
+        
+
+    }
+
+    #Endereço{
+        margin: 5px;
+    }
+
