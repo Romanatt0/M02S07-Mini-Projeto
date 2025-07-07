@@ -51,89 +51,88 @@
     <li><strong>Seja Parceiro:</strong> Estabelecimentos e empresas podem se cadastrar para apoiar o projeto com espaços, doações ou serviços.</li>
   </ul>
 
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Nome do Parceiro</label>
-            <input type="text" class="form-control" id="nome">
-        </div>
-        <div class="mb-3">
-            <label for="tipo" class="form-label">Tipo parceiro</label>
-            <select name="tipo" id="tipoParceiro">
-                <option value="ECO">Ecopontos (ECO)</option>
-                <option value="COO">Cooperativas (COO)</option>
-                <option value="PEV">Ponto de Entrega Voluntária (PEV)</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="responsavel" class="form-label">Responsável pelo Parceiro</label>
-            <input type="text" class="form-control" id="responsavelParceiro" >
-        </div>
-        <div class="mb-3">
-            <label for="telefoneResponsavel" class="form-label">Telefone do Responsável</label>
-            <input type="tel" class="form-control" id="telefoneResponsavel" >
-        </div>
-        <div class="mb-3">
-            <label for="emailResponsavel" class="form-label">E-mail do Responsável</label>
-            <input type="email" class="form-control" id="email" >
-        </div>
-        <div class="mb-3">
-            <label for="emailResponsavel" class="form-label">Endereço</label>
-            <input class = "Endereço" type="text" class="form-control" id="rua" placeholder="Rua">
-            <input class = "Endereço" type="text" class="form-control" id="numero" placeholder = "Número">
-            <input class = "Endereço" type="text" class="form-control" id="bairro" placeholder="Bairro">
-        </div>
-        <label for="">Tipos de resíduos aceitos</label>
+ <form id="form-parceiro">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do Parceiro</label>
+        <input type="text" class="form-control" id="nome" name="nome">
+    </div>
+    <div class="mb-3">
+        <label for="tipoParceiro" class="form-label">Tipo parceiro</label>
+        <select name="tipo" id="tipoParceiro" class="form-control">
+            <option value="ECO">Ecopontos (ECO)</option>
+            <option value="COO">Cooperativas (COO)</option>
+            <option value="PEV">Ponto de Entrega Voluntária (PEV)</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="responsavelParceiro" class="form-label">Responsável pelo Parceiro</label>
+        <input type="text" class="form-control" id="responsavelParceiro" name="responsavel">
+    </div>
+    <div class="mb-3">
+        <label for="telefoneResponsavel" class="form-label">Telefone do Responsável</label>
+        <input type="tel" class="form-control" id="telefoneResponsavel" name="telefone">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail do Responsável</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Endereço</label>
+        <input type="text" class="form-control" id="rua" placeholder="Rua">
+        <input type="text" class="form-control" id="numero" placeholder="Número">
+        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+    </div>
 
-        <div class="mb-3">
+    <label>Tipos de resíduos aceitos</label>
+    <div class="mb-3">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="papel" name="residuos[]" value="Papel">
+            <input class="form-check-input" type="checkbox" id="papel" name="residuos" value="Papel">
             <label class="form-check-label" for="papel">Papel</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="plastico" name="residuos[]" value="Plástico">
+            <input class="form-check-input" type="checkbox" id="plastico" name="residuos" value="Plástico">
             <label class="form-check-label" for="plastico">Plástico</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="vidro" name="residuos[]" value="Vidro">
+            <input class="form-check-input" type="checkbox" id="vidro" name="residuos" value="Vidro">
             <label class="form-check-label" for="vidro">Vidro</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="metal" name="residuos[]" value="Metal">
+            <input class="form-check-input" type="checkbox" id="metal" name="residuos" value="Metal">
             <label class="form-check-label" for="metal">Metal</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="oleo" name="residuos[]" value="Óleo de cozinha">
+            <input class="form-check-input" type="checkbox" id="oleo" name="residuos" value="Óleo de cozinha">
             <label class="form-check-label" for="oleo">Óleo de cozinha</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="pilhas" name="residuos[]" value="Pilhas e baterias">
+            <input class="form-check-input" type="checkbox" id="pilhas" name="residuos" value="Pilhas e baterias">
             <label class="form-check-label" for="pilhas">Pilhas e baterias</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="eletronicos" name="residuos[]" value="Eletrônicos">
+            <input class="form-check-input" type="checkbox" id="eletronicos" name="residuos" value="Eletrônicos">
             <label class="form-check-label" for="eletronicos">Eletrônicos</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="roupas" name="residuos[]" value="Roupas">
+            <input class="form-check-input" type="checkbox" id="roupas" name="residuos" value="Roupas">
             <label class="form-check-label" for="roupas">Roupas</label>
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="outros" name="residuos[]" value="Outros">
+            <input class="form-check-input" type="checkbox" id="outros" name="residuos" value="Outros">
             <label class="form-check-label" for="outros">Outros</label>
         </div>
-        </div>
+    </div>
 
-        <button type="enviar" class="btn btn-primary">enviar</button>
-    
-    </form>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 </section>
 
 <footer>
@@ -145,6 +144,6 @@
     <img src="https://senaitocantins.com.br/wp-content/uploads/2021/05/logo-azul-senai.png" alt="Senai">
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
