@@ -55,3 +55,8 @@ button {
     padding: 5px 20px;
     background-color: rgb(76, 172, 76);
 }
+
+a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
