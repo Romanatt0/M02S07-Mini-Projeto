@@ -50,7 +50,8 @@ function criarCard(parceiro) {
     if (parceiro.tipoParceiro.toLowerCase() === 'eco') {
         const imgEcoPonto = document.createElement('img');
         imgEcoPonto.src = './imagens/ecoponto.jpg';
-        imgEcoPonto.style.height = '80px';
+        imgEcoPonto.style.height = '100px';
+        imgEcoPonto.style.width = '70px';
         imgEcoPonto.style.display = 'block';
         imgEcoPonto.style.margin = 'auto';
         card.appendChild(imgEcoPonto);
