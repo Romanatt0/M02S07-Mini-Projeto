@@ -45,8 +45,33 @@ headers: {"Content-Type": "application/json"
 function criarCard(parceiro) {
     const card = document.createElement('li');
     cards.appendChild(card);
+
+    //cooperativa
+    if (parceiro.tipoParceiro.toLowerCase() === 'eco') {
+        const imgEcoPonto = document.createElement('img');
+        imgEcoPonto.src = './imagens/ecoponto.jpg';
+        imgEcoPonto.style.height = '80px';
+        imgEcoPonto.style.display = 'block';
+        imgEcoPonto.style.margin = 'auto';
+        card.appendChild(imgEcoPonto);
+    } else if (parceiro.tipoParceiro.toLowerCase() === 'coo') {
+        const imgCooperativa = document.createElement('img');
+        imgCooperativa.src = './imagens/cooperativa.png';
+        imgCooperativa.style.height = '80px';
+        imgCooperativa.style.display = 'block';
+        imgCooperativa.style.margin = 'auto';
+        card.appendChild(imgCooperativa);
+    } else if (parceiro.tipoParceiro.toLowerCase() === 'pev'){
+        const imgPev = document.createElement('img');
+        imgPev.src = './imagens/PEV-Man.png';
+        imgPev.style.height = '80px';
+        imgPev.style.display = 'block';
+        imgPev.style.margin = 'auto';
+        card.appendChild(imgPev);
+    }
+
     card.style.whiteSpace = 'pre-line'
-    card.innerHTML = '<strong>Nome: </strong>' + parceiro.nomeParceiro + '\n';
-    card.innerHTML += '<strong>Bairro: </strong>' + parceiro.bairro + '\n';
-    card.innerHTML += '<strong>Data de Registro: </strong>' + parceiro.dataCriacao;
+    card.innerHTML += '\n\n' + '<strong>Nome: </strong>' + parceiro.nomeParceiro + '\n';
+    card.innerHTML += '\n' + '<strong>Bairro: </strong>' + parceiro.bairro + '\n';
+    card.innerHTML += '\n' + '<strong>Data de Registro: </strong>' + parceiro.dataCriacao;
 }
