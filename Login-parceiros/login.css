@@ -6,16 +6,18 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(5, 90, 5);
+    background-color: rgb(2, 79, 2);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body > h1 {
     margin: 60px 0px;
+    color: rgb(91, 135, 84);
+    text-shadow: -2px -2px 5px green;
 }
 
 #cabecalhoForm {
-    color: rgb(134, 206, 129);
+    color: rgb(10, 54, 10);
 }
 
 form {
@@ -27,6 +29,8 @@ form {
     width: 500px;
     border-radius: 30px;
     border: 1px solid black;
+
+    box-shadow: 0px 0px 5px green;
 }
 
 section {
@@ -42,7 +46,7 @@ section {
 label {
     padding-right: 50px;
     font-weight: bold;
-    color: rgb(163, 191, 120);
+    color: rgb(122, 166, 117);
 }
 
 input {
@@ -54,7 +58,16 @@ input {
 button {
     padding: 5px 20px;
     background-color: rgb(76, 172, 76);
+    border: 1px solid rgb(18, 35, 24);
+    transition: box-shadow 0.2s ease;
+    color: black;
 }
+
+button:hover {
+    background-color: rgb(112, 217, 112);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 a {
     color: rgb(5, 5, 5);
