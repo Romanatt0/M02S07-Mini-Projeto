@@ -5,11 +5,11 @@
         const residuosMarcados = Array.from(document.querySelectorAll("input[name='residuos']:checked")).map(el => el.value);
 
         const parceiro = {
-            nome: document.getElementById("nome").value,
+            nome: document.getElementById("nomeParceiro").value,
             tipo: document.getElementById("tipoParceiro").value,
             responsavel: document.getElementById("responsavelParceiro").value,
-            telefone: document.getElementById("telefoneResponsavel").value,
-            email: document.getElementById("email").value,
+            telefone: document.getElementById("telResponsavel").value,
+            email: document.getElementById("emailResponsavel").value,
             endereco: {
                 rua: document.getElementById("rua").value,
                 numero: document.getElementById("numero").value,
