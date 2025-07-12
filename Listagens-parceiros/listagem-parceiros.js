@@ -49,7 +49,7 @@ function criarCard(parceiro) {
     //cooperativa
     if (parceiro.tipoParceiro.toLowerCase() === 'eco') {
         const imgEcoPonto = document.createElement('img');
-        imgEcoPonto.src = './imagens/ecoponto.jpg';
+        imgEcoPonto.src = '../imagens/ecoponto.jpg';
         imgEcoPonto.style.height = '100px';
         imgEcoPonto.style.width = '70px';
         imgEcoPonto.style.display = 'block';
@@ -57,14 +57,14 @@ function criarCard(parceiro) {
         card.appendChild(imgEcoPonto);
     } else if (parceiro.tipoParceiro.toLowerCase() === 'coo') {
         const imgCooperativa = document.createElement('img');
-        imgCooperativa.src = './imagens/cooperativa.png';
+        imgCooperativa.src = '../imagens/cooperativa.png';
         imgCooperativa.style.height = '80px';
         imgCooperativa.style.display = 'block';
         imgCooperativa.style.margin = 'auto';
         card.appendChild(imgCooperativa);
     } else if (parceiro.tipoParceiro.toLowerCase() === 'pev'){
         const imgPev = document.createElement('img');
-        imgPev.src = './imagens/PEV-Man.png';
+        imgPev.src = '../imagens/PEV-Man.png';
         imgPev.style.height = '80px';
         imgPev.style.display = 'block';
         imgPev.style.margin = 'auto';
@@ -75,4 +75,9 @@ function criarCard(parceiro) {
     card.innerHTML += '\n\n' + '<strong>Nome: </strong>' + parceiro.nomeParceiro + '\n';
     card.innerHTML += '\n' + '<strong>Bairro: </strong>' + parceiro.bairro + '\n';
     card.innerHTML += '\n' + '<strong>Data de Registro: </strong>' + parceiro.dataCriacao;
+
+    card.addEventListener('click', () => {
+    window.location.href = `detalhamento.html?id=${parceiro.id}`;
+});
+
 }
