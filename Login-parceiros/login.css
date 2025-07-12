@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(2, 79, 2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > h1 {
+    margin: 60px 0px;
+    color: rgb(91, 135, 84);
+    text-shadow: -2px -2px 5px green;
+}
+
+#cabecalhoForm {
+    color: rgb(10, 54, 10);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(81, 104, 81);
+    width: 500px;
+    border-radius: 30px;
+    border: 1px solid black;
+
+    box-shadow: 0px 0px 5px green;
+}
+
+section {
+    padding: 30px;
+}
+
+#campoEmail, #campoSenha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    padding-right: 50px;
+    font-weight: bold;
+    color: rgb(122, 166, 117);
+}
+
+input {
+    padding: 3px;
+    background-color: rgb(216, 225, 204);
+    width: 55%;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: rgb(76, 172, 76);
+    border: 1px solid rgb(18, 35, 24);
+    transition: box-shadow 0.2s ease;
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(112, 217, 112);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
